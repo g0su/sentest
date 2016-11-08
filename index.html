@@ -38,7 +38,7 @@ http://www.tooplate.com/view/2077-modern-town
                     <div>
                         <img src="images/logo2.png" width="50%" class="wow fadeInDown" alt="CFO"></h1>
                     </div>
-                    <a href="#" class="btn btn-danger wow fadeInUp" data-wow-delay="0.4s">ĐĂNG KÝ</a>
+                    <a href="#" onclick="toggleModal()" class="btn btn-danger wow fadeInUp" data-wow-delay="0.4s">ĐÊM CHUNG KẾT</a>
                     <a href="#about" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.6s">THỂ LỆ</a>
                 </div>
                 <div class="row">
@@ -50,6 +50,16 @@ http://www.tooplate.com/view/2077-modern-town
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Modal -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal hidden">
+            <!-- The Close Button -->
+            <span class="close" onclick="toggleModal()">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01" src="images/final_poster.jpg" alt="Final Poster">
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
         </div>
     </section>
     <!-- Navigation section
@@ -123,7 +133,6 @@ http://www.tooplate.com/view/2077-modern-town
             </div>
         </div>
     </section>
-
     <section id="main-sponsor" class="paralla-section">
         <div class="container">
             <div class="row">
@@ -139,7 +148,6 @@ http://www.tooplate.com/view/2077-modern-town
             </div>
         </div>
     </section>
-
     <section id="support" class="paralla-section">
         <div class="container">
             <div class="row text-center">
@@ -153,10 +161,14 @@ http://www.tooplate.com/view/2077-modern-town
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
                     <img src="images/momo.jpg" alt="MOMO" class="center-img">
                 </div>
+                <div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    <img src="images/sen.jpg" alt="S.E.N Platform" class="center-img width250px">
+                </div>
             </div>
         </div>
     </section>
-
     <section id="communication" class="paralla-section">
         <div class="container">
             <div class="row text-center">
@@ -215,6 +227,11 @@ http://www.tooplate.com/view/2077-modern-town
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery.sticky-kit.min.js"></script>
+    <script>
+    function toggleModal() {
+        $('#myModal').toggleClass('hidden');
+    }
+    </script>
 </body>
 
 </html>
